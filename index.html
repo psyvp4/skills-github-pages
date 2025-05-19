@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>People Search</h1>
+      <nav>
+        <div class="navbar">
+          <ul id="Navbar" class="nav-links">
+            <li class="people-search"><a href="index.html">People Search</a></li>
+            <li class="vehicle-search"><a href="vehiclesearch.html">Vehicle Search</a></li>
+            <li class="add-vehicle"><a href="addvehicle.html">Add a Vehicle</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <aside id="sidebar">
+      <img src="/assets/image1.png" alt=Logo>
+    </aside>
+    <main>
+      <form id="peoplesearchform">
+        <label for="drivername">Search by driver name:</label>
+        <input type="text" id="name" name="drivername"><br>
+        <label for="drivinglnumber">Search by driver license number:</label>
+        <input type="text" id="license" name="licensenumber"><br>
+        <input type="submit" value="Submit">
+      </form>
+      <div id="message"></div>
+      <div id="results"></div>
+    </main>
+    <footer>
+      This is the footer
+    </footer>
+    <script src="script.js" type='module'></script>
+  </div>
+</body>
+
+</html>

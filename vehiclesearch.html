@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Vehicle Search</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>Vehicle Search</h1>
+      <nav>
+        <div class="navbar">
+          <ul id="Navbar" class="nav-links">
+            <li class="people-search"><a href="index.html">People Search</a></li>
+            <li class="vehicle-search"><a href="vehiclesearch.html">Vehicle Search</a></li>
+            <li class="add-vehicle"><a href="addvehicle.html">Add a Vehicle</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <aside id="sidebar">
+      <img src="/assets/image1.png" alt="Logo">
+    </aside>
+
+    <main>
+      <form id="vehiclesearchform">
+        <label for="rego">Enter registration number:</label>
+        <input type="text" id="rego" name="rego" required>
+        <input type="submit" value="Search">
+      </form>
+      <div id="message"></div>
+      <div id="results"></div>
+    </main>
+
+    <footer>
+      <p>This is the footer</p>
+    </footer>
+  </div> <!-- ✅ Correct closing of #container -->
+
+  <!-- ✅ Now the DOM is fully loaded when the script runs -->
+  <script src="script2.js" type='module'></script>
+
+</body>
+
+</html>
